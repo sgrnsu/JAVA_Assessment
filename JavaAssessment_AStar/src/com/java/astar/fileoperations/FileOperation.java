@@ -104,7 +104,7 @@ public class FileOperation {
 			fileWriter = new FileWriter(new File(filePath));
 			for(int i=0; i<graph.length; i++){
 				fileWriter.write(graph[i]);
-				fileWriter.write('\n');
+				fileWriter.write("\r\n");
 			}
 		} catch (IOException e) {
 			System.err.println("Exception occurs while writing the file using FileWriter.");
