@@ -116,11 +116,11 @@ public class AStarDelegateImpl implements AStarDelegate{
 		if(row > 0 && column > 0)
 			addNeighbor(row-1, column-1, currentNode, graph);
 		
-		if(row > 0)
-			addNeighbor(row-1, column, currentNode, graph);
-		
 		if(column > 0)
 			addNeighbor(row, column-1, currentNode, graph);
+		
+		if(row > 0)
+			addNeighbor(row-1, column, currentNode, graph);
 		
 		if(column > 0 && row < graphRowLength-1){
 			addNeighbor(row+1, column-1, currentNode, graph);
